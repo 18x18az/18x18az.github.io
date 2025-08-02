@@ -1,0 +1,143 @@
+.header {
+    position: relative;
+    background-image: url('../../assets/HomePageBackground.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    // Overlay for shaded effect
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.55); // Adjust color & opacity as needed
+        z-index: 1;
+    }
+}
+
+.logo {
+    display: block;
+    width: auto;
+    height: 30vh;
+    max-width: 100%;
+    opacity: 1;
+    position: relative;
+    z-index: 2; // Ensure logo is above overlay
+}
+
+.content {
+    margin: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.section {
+    padding: 20px 0;
+    color: var(--main-text-color);
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 20px;
+
+    .sectionContent {
+        min-height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .sectionHeader {
+            font-size: 2rem;
+            margin-bottom: 10px;
+            color: var(--main-text-color);
+            margin: 0;
+        }
+
+        .sectionText {
+            padding: 10px;
+            color: var(--main-text-color);
+            max-width: 70%;
+        }
+
+        .link {
+            color: var(--main-link-color);
+            text-decoration: none;
+            font-weight: bold;
+            width: fit-content;
+
+            &:hover {
+                color: var(--main-link-hover-color);
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+.section:nth-child(even) {
+    flex-direction: row;
+    text-align: right;
+
+    .sectionText {
+        max-width: 70%;
+        place-self: flex-end;
+    }
+}
+
+.sectionImage {
+    height: 15rem;
+    width: auto;
+}
+
+
+@media (max-width: 768px) {
+    .header {
+        height: 50vh; // Adjust height for smaller screens
+    }
+
+    .logo {
+        height: 20vh; // Adjust logo size for smaller screens
+    }
+
+    .content {
+        margin: 10px;
+    }
+
+    .section {
+        flex-direction: column;
+        align-items: center;
+
+        .sectionContent {
+
+            .sectionHeader {
+                text-align: center;
+            }
+
+            .sectionText {
+                max-width: 100%;
+                padding: 10px;
+                place-self: center;
+            }
+            .linkContainer {
+                text-align: center;
+            }
+        }
+    }
+
+    .section:nth-child(even) {
+        flex-direction: column;
+        align-items: center;
+        text-align: left;
+
+        .sectionText {
+            max-width: 100%;
+            padding: 10px;
+            place-self: center;
+        }
+    }
+}

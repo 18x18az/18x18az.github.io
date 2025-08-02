@@ -1,0 +1,113 @@
+$header-background-color: var(--header-background-color);
+$color: var(--main-text-color);
+$link-color: var(--main-link-color);
+
+.NavBar {
+  text-align: center;
+  background-color: $header-background-color;
+  color: $color;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 40px;
+  position: sticky;
+  top: 0;
+  z-index: 9000;
+}
+
+.AppLogo {
+  height: 60px;
+  cursor: pointer;
+}
+
+.NavLinks {
+  display: flex;
+  gap: 20px;
+  flex-direction: row;
+
+  & > a {
+    color: $link-color;
+    text-decoration: none;
+    font-weight: bold;
+    position: relative;
+    transition: transform 0.2s cubic-bezier(0.4,0,0.2,1);
+
+    // Animated underline bar
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: -4px;
+      height: 3px;
+      background: $link-color;
+      border-radius: 2px;
+      opacity: 0;
+      transform: translateY(6px);
+      transition: 
+        opacity 0.2s cubic-bezier(0.4,0,0.2,1),
+        transform 0.2s cubic-bezier(0.4,0,0.2,1);
+    }
+
+    &:hover {
+      transform: translateY(-4px);
+
+      &::after {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  }
+}
+
+.Hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 10001;
+
+  span {
+    display: block;
+    width: 28px;
+    height: 4px;
+    margin: 4px 0;
+    background: $color;
+    border-radius: 2px;
+    transition: 0.3s;
+  }
+}
+
+@media (max-width: 768px) {
+  .NavLinks {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    background: $header-background-color;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px 0;
+    border-radius: 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    z-index: 10000;
+    align-items: center;
+  }
+
+  .ShowMenu {
+    display: flex;
+    width: 100vw;
+  }
+
+  .Hamburger {
+    display: flex;
+  }
+}
