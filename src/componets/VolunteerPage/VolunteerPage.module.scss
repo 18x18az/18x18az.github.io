@@ -1,78 +1,125 @@
-$background-color: #0d0b18;
+$background-color: #18162a;
+$text-main: #fff;
+$text-secondary: #bbb;
+$accent-color: #00e0ff;
 
-.title{
-    text-align: center;
-    font-size: 5em;
-    margin: 5rem 0;
+.volunteerContainer {
+  color: $text-main;
+  min-height: 100vh;
+  padding-bottom: 2rem;
+}
+
+.title {
+  text-align: center;
+  font-size: 3em;
+  margin: 2.5rem 0 1.5rem 0;
+  letter-spacing: 1px;
+  color: $text-main;
+  text-shadow: 0 2px 12px #0008;
+}
+
+.section {
+  background: #18162a;
+  border-radius: 12px;
+  margin: 1.2rem auto 0.7rem auto;
+  padding: 1.2rem 2rem 1.2rem 2rem;
+  width: 70%;
+  color: $text-main;
+  box-shadow: 0 2px 12px #0005;
+  border-left: 6px solid $text-main;
+  position: relative;
+  overflow: hidden;
+}
+
+.sectionHeader {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: $accent-color;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.sectionText {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  color: $text-secondary;
+  line-height: 1.7;
 }
 
 .eventList {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1.5rem;
 }
 
 .eventItem {
-    background-color: $background-color;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 1rem;
-    margin: 0.5rem 0;
-    width: 60%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
+  background: #22203a;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px #0005;
+  border-left: 4px solid $text-main;
+  margin: 1rem 0;
+  padding: 1.2rem 2rem;
+  width: 60%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  color: $text-main;
 }
 
 .eventName {
-    font-size: 1.5rem;
-    color: #fff;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: $accent-color;
 }
 
 .eventDate {
-    font-size: 1rem;
-    color: #ccc;
+  font-size: 1rem;
+  color: $text-secondary;
 }
 
 .eventLinks {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.5rem;
 }
 
 .eventRobotEventLink, .eventVolunteerLink {
-    display: block;
-    padding: 20px;
-    color: #fff;
-    text-decoration: none;
-    background-color: #022129;
-    border: 1px solid #ffff;
+  display: block;
+  padding: 0.6rem 1.2rem;
+  color: $text-main;
+  text-decoration: none;
+  background: darken($accent-color, 30%);
+  border-radius: 4px;
+  font-weight: 500;
+  margin-bottom: 0.2rem;
+  transition: background 0.2s, color 0.2s;
+  border: none;
 }
+.eventRobotEventLink:hover, .eventVolunteerLink:hover {
+  background: lighten($accent-color, 10%);
+  color: #18162a;
+}
+
 @media (max-width: 768px) {
-    .title {
-        font-size: 3em;
-        margin: 2rem 0;
-    }
-
-    .eventList {
-        max-width: 100%;
-        margin: 20px;
-    }
-    .eventItem {
-        flex-direction: column;
-        width:70%;
-    }
-
-    .eventLinks {
-        flex-direction: column;
-        align-items: center;
-        gap: 0;
-    }
-
-    .eventRobotEventLink, .eventVolunteerLink {
-        width: 100%;
-        text-align: center;
-    }
+  .title {
+    font-size: 2em;
+    margin: 1.2rem 0;
+  }
+  .section {
+    width: 80%;
+    padding: 0.7rem 0.5rem;
+    margin: 0.7rem auto 0.4rem auto;
+  }
+  .eventItem {
+    flex-direction: row;
+    width: 80%;
+    align-items: space-between;
+    padding: 1rem 0.7rem;
+  }
+  .eventLinks {
+    align-items: flex-start;
+  }
 }

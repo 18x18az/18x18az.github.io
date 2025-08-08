@@ -1,0 +1,123 @@
+$background-color: #18162a;
+$accent-color: #222;
+$text-main: #fff;
+$text-secondary: #bbb;
+
+
+.title {
+  text-align: center;
+  font-size: 3em;
+  margin: 2rem 0 1.2rem 0;
+  letter-spacing: 1px;
+  color: $text-main;
+  text-shadow: 0 2px 12px #0008;
+}
+
+.section {
+  background: $background-color;
+  border-radius: 12px;
+  margin: 1.2rem auto 0.7rem auto;
+  padding: 1.2rem 2rem 1.2rem 2rem;
+  width: 70%;
+  color: $text-main;
+  box-shadow: 0 2px 12px #0005;
+  border-left: 6px solid #fff;
+  position: relative;
+  overflow: hidden;
+}
+.sectionHeader {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: $text-main;
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.sectionText {
+  font-size: 1.05rem;
+  margin-bottom: 0.5rem;
+  color: $text-secondary;
+  line-height: 1.6;
+}
+
+.formContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.form {
+  background: #18162a;
+  padding: 1.2rem 1.5rem;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 420px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  box-shadow: 0 2px 8px #0005;
+  border: 1px solid #fff2;
+}
+
+.input, .textarea {
+  padding: 0.7rem;
+  border-radius: 4px;
+  border: 1px solid #fff3;
+  background: #22203a;
+  color: #fff;
+  font-size: 1rem;
+  transition: border 0.2s;
+}
+.input:focus, .textarea:focus {
+  border: 1.5px solid #fff;
+  outline: none;
+}
+
+.button {
+  background: #fff;
+  color: #18162a;
+  border: 2px solid #fff;
+  padding: 0.7rem 2rem;
+  border-radius: 4px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  font-weight: 600;
+  box-shadow: 0 1px 6px #0003;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50px;
+}
+.button:hover {
+  color: #fff;
+  background: #18162a;
+  border-color: #fff;
+}
+.link {
+    color: #00e0ff;
+    text-decoration: none;
+    transition: color 0.2s;
+
+    &:hover {
+        color: #00b0ff;
+    }
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 3em;
+    margin: 1rem 0;
+  }
+  .section {
+    width: 80%;
+    padding: 0.7rem 0.5rem;
+    margin: 0.7rem auto 0.4rem auto;
+  }
+  .form {
+    padding: 0.7rem 0.5rem;
+    width: 90%;
+  }
+}

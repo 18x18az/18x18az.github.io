@@ -100,7 +100,18 @@ $link-color: var(--main-link-color);
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     z-index: 10000;
     align-items: center;
+
+    & > a {
+      width: 100%;
+      text-align: center;
+      padding: 10px 0;
+
+      &::after {
+        display: none; // Hide the underline on mobile
+      }
+    }
   }
+  
 
   .ShowMenu {
     display: flex;

@@ -1,10 +1,18 @@
-import { useState } from "react";
-import { Outlet, Link } from "react-router-dom";
-import logo from './assets/logo.svg';
+import React, { useState, useEffect } from "react";
+import { Link, Outlet, useLocation } from "react-router-dom";
+import logo from './assets/LogoWithText.svg';
 import styles from './Layout.module.scss';
 
 function Layout() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const location = useLocation();
+
+  useEffect(() => {
+    // Close the menu when the route changes
+    setMenuOpen(false);
+    // scroll to top on route change
+    window.scrollTo(0, 0);
+  }, [location.pathname]);
 
   return (
     <div className={styles.App}>
@@ -27,7 +35,7 @@ function Layout() {
           <Link to="/">Home</Link>
           <a href="https://azroboticschampionship.com" target="_blank" rel="noopener noreferrer">States</a>
           <Link to="/volunteer">Volunteer</Link>
-          <Link to="/contact">Contact</Link>
+          <Link to="/hostevent">Host Event</Link>
           <Link to="/about">About</Link>
         </div>
       </div>
