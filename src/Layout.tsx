@@ -39,8 +39,12 @@ function Layout() {
           <Link to="/about">About</Link>
         </div>
       </div>
-
-      <Outlet />
+      <div className={styles.Content}>
+        <Outlet />
+      </div>
+      <div className={styles.Footer}>
+        <p>© {new Date().getFullYear()} 18x18 AZ</p>
+      </div>
     </div>
   );
 }

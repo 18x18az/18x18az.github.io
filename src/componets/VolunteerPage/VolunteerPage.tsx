@@ -1,10 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import styles from './VolunteerPage.module.scss';
-
-const EventList: Event[] = [
-  { robotEventsLink: "https://www.robotevents.com", name: "Event 1", date: "2025-10-01", volunteerLink: "" },
-  { robotEventsLink: "https://www.robotevents.com", name: "Event 2", date: "2025-10-09", volunteerLink: "" },
-];
+import EventList from '../../event-config.json';
 
 interface Event {
   robotEventsLink: string;
@@ -18,7 +14,7 @@ const VolunteerPage = () => {
 
   useEffect(() => {
     // Sort events by date
-    setCurrentEvents([...EventList].sort((a, b) => new Date(a.date).getTime() - new Date(b.date).getTime()));
+    setCurrentEvents([...EventList.events].sort((a, b) => new Date(a.date).getTime() - new Date(b.date).getTime()));
   }, []);
 
   return (
@@ -42,7 +38,7 @@ const VolunteerPage = () => {
       <div className={styles.eventList}>
         {currentEvents.map((event, index) => (
           <div key={index} className={styles.eventItem}>
-            <div>
+            <div className={styles.eventDetails}>
               <div className={styles.eventName}>{event.name}</div>
               <div className={styles.eventDate}>Date: {new Date(event.date).toLocaleDateString()}</div>
             </div>

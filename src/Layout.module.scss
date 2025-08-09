@@ -2,6 +2,25 @@ $header-background-color: var(--header-background-color);
 $color: var(--main-text-color);
 $link-color: var(--main-link-color);
 
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.Content {
+  flex: 1;
+}
+
+.Footer {
+  text-align: center;
+  padding: 5px;
+  background-color: $header-background-color;
+  color: $color;
+  width: 100%;
+  box-sizing: border-box;
+}
+
 .NavBar {
   text-align: center;
   background-color: $header-background-color;
@@ -83,6 +102,7 @@ $link-color: var(--main-link-color);
     transition: 0.3s;
   }
 }
+
 
 @media (max-width: 768px) {
   .NavLinks {
