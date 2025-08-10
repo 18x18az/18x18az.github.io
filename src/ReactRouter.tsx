@@ -20,7 +20,6 @@ export default function ReactRouter() {
           <Route path="volunteer" element={<VolunteerPage />} />
           {/* Catch-all route for 404 errors */}
           <Route path="*" element={<ErrorPage />} />
-          
         </Route>
       </Routes>
     </BrowserRouter>
