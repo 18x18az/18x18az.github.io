@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/websiteV2/static/css/main.b766eaf2.css",
-    "main.js": "/websiteV2/static/js/main.3adf92ec.js",
-    "static/media/EventPicture.jpg": "/websiteV2/static/media/EventPicture.26af35608e71be330226.jpg",
-    "static/media/volunteers.jpg": "/websiteV2/static/media/volunteers.d4312c7964324a2a8185.jpg",
-    "static/media/HomePageBackground.jpg": "/websiteV2/static/media/HomePageBackground.73a8899019f8489a5d62.jpg",
-    "static/media/statesLogo.png": "/websiteV2/static/media/statesLogo.9472916a3b6f8a6d72cb.png",
-    "static/media/LogoWithText.svg": "/websiteV2/static/media/LogoWithText.adb0584bcae0185b44a0163ddbbcc79f.svg",
-    "static/media/Logo.svg": "/websiteV2/static/media/Logo.f05b3e204e853b73f42af33a210c009a.svg",
-    "index.html": "/websiteV2/index.html",
-    "main.b766eaf2.css.map": "/websiteV2/static/css/main.b766eaf2.css.map",
-    "main.3adf92ec.js.map": "/websiteV2/static/js/main.3adf92ec.js.map"
+    "main.css": "/static/css/main.5bd62496.css",
+    "main.js": "/static/js/main.fe255486.js",
+    "static/media/EventPicture.jpg": "/static/media/EventPicture.26af35608e71be330226.jpg",
+    "static/media/volunteers.jpg": "/static/media/volunteers.d4312c7964324a2a8185.jpg",
+    "static/media/HomePageBackground.jpg": "/static/media/HomePageBackground.73a8899019f8489a5d62.jpg",
+    "static/media/statesLogo.png": "/static/media/statesLogo.9472916a3b6f8a6d72cb.png",
+    "static/media/LogoWithText.svg": "/static/media/LogoWithText.adb0584bcae0185b44a0163ddbbcc79f.svg",
+    "static/media/Logo.svg": "/static/media/Logo.f05b3e204e853b73f42af33a210c009a.svg",
+    "index.html": "/index.html",
+    "main.5bd62496.css.map": "/static/css/main.5bd62496.css.map",
+    "main.fe255486.js.map": "/static/js/main.fe255486.js.map"
   },
   "entrypoints": [
-    "static/css/main.b766eaf2.css",
-    "static/js/main.3adf92ec.js"
+    "static/css/main.5bd62496.css",
+    "static/js/main.fe255486.js"
   ]
 }
