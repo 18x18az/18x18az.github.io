@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { HashRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import Layout from './Layout';
 import HomePage from './componets/HomePage/HomePage';
@@ -11,7 +11,7 @@ import VolunteerPage from './componets/VolunteerPage/VolunteerPage';
 
 export default function ReactRouter() {
   return (
-    <HashRouter>
+    <BrowserRouter>
       <Routes>
         <Route path="/" element={<Layout />} >
           <Route index element={<HomePage />} />
@@ -22,6 +22,6 @@ export default function ReactRouter() {
           <Route path="*" element={<ErrorPage />} />
         </Route>
       </Routes>
-    </HashRouter>
+    </BrowserRouter>
   );
 }
