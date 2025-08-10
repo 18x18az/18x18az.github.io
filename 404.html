@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Page Not Found</title>
+    <meta http-equiv="refresh" content="0; URL=/" />
+    <script>
+      // This script will rewrite the URL to the correct path after reload
+      (function() {
+        var pathname = window.location.pathname;
+        var search = window.location.search || "";
+        var hash = window.location.hash || "";
+        var origin = window.location.origin;
+
+        // If not already on the root, reload at the correct path
+        if (pathname !== '/' && !pathname.endsWith('/404.html')) {
+          var newUrl = origin + pathname + search + hash;
+          window.location.replace(newUrl);
+        }
+      })();
+    </script>
+  </head>
+  <body>
+    <h1>404 - Page Not Found</h1>
+    <p>Redirecting...</p>
+  </body>
+</html>
