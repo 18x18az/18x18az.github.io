@@ -11,7 +11,7 @@ import VolunteerPage from './componets/VolunteerPage/VolunteerPage';
 
 export default function ReactRouter() {
   return (
-    <BrowserRouter basename="/websiteV2">
+    <BrowserRouter>
       <Routes>
         <Route path="/" element={<Layout />} >
           <Route index element={<HomePage />} />

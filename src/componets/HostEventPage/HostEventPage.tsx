@@ -15,7 +15,7 @@ const HostEventPage = () => {
           <FontAwesomeIcon icon={faMoneyBillWave} style={{ color: '#00e0ff' }} /> Pricing
         </h2>
         <p className={styles.sectionText}>
-          Our standard event hosting fee is <b>$600</b> per event. This covers all field control equipment, video equipment, audio equipment, and referees.
+          Our standard event hosting fee is <b>$600</b> per event. This covers all field control equipment, video equipment, audio equipment, and head referees.
         </p>
       </div>
 
