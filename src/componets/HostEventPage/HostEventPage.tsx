@@ -24,9 +24,9 @@ const HostEventPage = () => {
           <FontAwesomeIcon icon={faHandsHelping} style={{ color: '#00e0ff' }} /> What We Provide
         </h2>
         <ul className={styles.sectionText}>
-          <li>All robotics competition equipment <span style={{ color: '#00e0ff' }}>(electronics, scoring systems, cameras, mircophones, projectors)</span></li>
-          <li>Event staff and certified referees</li>
-          <li>Event setup and teardown of competition equipment</li>
+          <li>All Electronic Equipment <span style={{ color: '#00e0ff' }}>(field control, scoring systems, cameras, mircophones, projectors)</span></li>
+          <li>Head Technician and certified Head Referees</li>
+          <li>Event setup and teardown of our provided equipment</li>
           <li>Live Stream</li>
           <li>Day-of technical support</li>
         </ul>
@@ -38,9 +38,11 @@ const HostEventPage = () => {
         </h2>
         <ul className={styles.sectionText}>
           <li>Event venue <span style={{ color: '#00e0ff' }}>(gym, cafeteria, or similar space)</span></li>
+          <li>Event Partner</li>
+          <li>Fields and Field Elements</li>
           <li>Tables and chairs for teams and staff</li>
           <li>Access to power outlets and Ethernet</li>
-          <li>Event volunteers <Link className={styles.link} to="/volunteer">(we can help recruit if needed)</Link></li>
+          <li>Event volunteers and Judges <Link className={styles.link} to="/volunteer">(we can help recruit if needed)</Link></li>
           <li>Restrooms and basic facilities</li>
         </ul>
       </div>
