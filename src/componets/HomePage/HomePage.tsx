@@ -74,7 +74,7 @@ const HomePage = () => {
             <p className={styles.sectionText}>
               Catch all the action as 18x18az live streams robotics tournaments! Whether you're cheering for your team, scouting competitors, or just love the thrill of robotics, don’t miss out on the excitement.
               Watch live as the events unfold, or replay the stream anytime on our YouTube channel.
-              Subscribe on YouTube and stay up-to-date with every match, every moment!
+              Subscribe on YouTube to stay up-to-date with every match and every moment!
             </p>
             <div className={styles.linkContainer}>
               <a href="https://www.youtube.com/@18x18az" className={styles.link} target="_blank" rel="noopener noreferrer">18x18az Youtube Channel . . .</a>
