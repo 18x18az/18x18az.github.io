@@ -36,6 +36,7 @@ function Layout() {
           <a href="https://azroboticschampionship.com" target="_blank" rel="noopener noreferrer">States</a>
           <Link to="/volunteer">Volunteer</Link>
           <Link to="/hostevent">Host Event</Link>
+          <a href="https://www.youtube.com/@18x18az" target="_blank" rel="noopener noreferrer">Event Stream</a>
           <Link to="/about">About</Link>
         </div>
       </div>
