@@ -13,7 +13,7 @@ const VolunteerPage = () => {
   const [currentEvents, setCurrentEvents] = useState<Event[]>([]);
 
   useEffect(() => {
-    // Sort events by date
+    // Sort events by date so closest event is first
     setCurrentEvents([...EventList.events].sort((a, b) => new Date(a.date).getTime() - new Date(b.date).getTime()));
   }, []);
 
