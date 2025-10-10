@@ -5,6 +5,7 @@ import { ReactComponent as Logo } from '../../assets/Logo.svg';
 import StatesLogo from '../../assets/statesLogo.png';
 import EventPicture from '../../assets/EventPicture.jpg';
 import VolunteerPicture from '../../assets/volunteers.jpg';
+import DITDLogo from "../../assets/DiamondIntheDesert.webp"
 import styles from './HomePage.module.scss';
 
 
@@ -41,6 +42,22 @@ const HomePage = () => {
         </div>
         <div className={styles.section}>
           <div className={styles.sectionContent}>
+            <h1 className={styles.sectionHeader}>Diamond In the Desert</h1>
+            <p className={styles.sectionText}>
+              Get Ready for a World-Class Event in Mesa, Arizona!<br/>
+              <br/>
+              Join us in beautiful Mesa, Arizona for Diamond in the Desert, a premier international robotics competition! This World’s Level event invites top-tier teams from around the globe to showcase their skills, compete at the highest level, and celebrate the New Year together in the heart of the desert.<br/>
+              <br/>
+              Come for the competition, stay for the celebration — all under the Arizona sun!
+            </p>
+            <div className={styles.linkContainer}> 
+              <a href="https://diamondinthedesert.us" className={styles.link} target="_blank" rel="noopener noreferrer">Click Here to learn more about Diamond in the Desert . . .</a>
+            </div>
+          </div>
+          <img src={DITDLogo} className={styles.sectionImage} />
+        </div>
+        <div className={styles.section}>
+          <div className={styles.sectionContent}>
             <h1 className={styles.sectionHeader}>States</h1>
             <p className={styles.sectionText}>
               The Arizona Robotics State Championship is the culmination of our season, bringing together the best teams from across the state to compete, collaborate, and celebrate their achievements. Learn more about the event, how to qualify, and what to expect at this exciting showcase of talent and innovation.
@@ -50,6 +67,20 @@ const HomePage = () => {
             </div>
           </div>
           <img src={StatesLogo} className={styles.sectionImage} />
+        </div>
+        <div className={styles.section}>
+          <div className={styles.sectionContent}>
+            <h1 className={styles.sectionHeader}>Watch 18x18az Live</h1>
+            <p className={styles.sectionText}>
+              Catch all the action as 18x18az live streams robotics tournaments! Whether you're cheering for your team, scouting competitors, or just love the thrill of robotics, don’t miss out on the excitement.
+              Watch live as the events unfold, or replay the stream anytime on our YouTube channel.
+              Subscribe on YouTube to stay up-to-date with every match and every moment!
+            </p>
+            <div className={styles.linkContainer}>
+              <a href="https://www.youtube.com/@18x18az" className={styles.link} target="_blank" rel="noopener noreferrer">18x18az Youtube Channel . . .</a>
+            </div>
+          </div>
+          <Logo className={styles.sectionImage} />
         </div>
         <div className={styles.section}>
           <div className={styles.sectionContent}>
