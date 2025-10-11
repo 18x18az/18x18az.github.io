@@ -42,6 +42,21 @@ const AboutUsPage = () => {
           {/* TODO: Add more details or links for volunteering, donations, and contact info */}
         </p>
       </div>
+
+      <div className={styles.section}>
+        <h2 className={styles.sectionHeader}>Donate Today</h2>
+        <p className={styles.sectionText}>
+          At 18x18 AZ Robotics, we believe that every student deserves the opportunity to explore, create, and innovate through hands-on STEM education. As a nonprofit organization, we’re dedicated to advancing robotics opportunities across Arizona — hosting VEX Robotics competitions, training students and mentors, and building a strong, inclusive community of young engineers and problem-solvers.<br/>
+          Your donation directly supports:<br/>
+          🤖 Student Robotics Teams — helping schools and community groups start and sustain robotics programs.<br/>
+          🏆 Competitions & Events — creating inspiring spaces for students to learn, collaborate, and compete.<br/>
+          🧠 Training & Mentorship — empowering coaches, educators, and volunteers who guide the next generation of innovators.<br/>
+
+          Every contribution, big or small, helps us bring STEM to more students across Arizona. Together, we can build a future where creativity, teamwork, and technology thrive.<br/>
+
+          <a href="https://www.zeffy.com/en-US/donation-form/creating-tomorrow-innovators" className={styles.link} target="_blank" rel="noopener noreferrer">Donate today and help us inspire Arizona’s next generation of innovators!</a><br/>
+        </p>
+      </div>
     </div>
   );
 };

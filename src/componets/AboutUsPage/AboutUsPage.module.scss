@@ -45,6 +45,18 @@ $accent-color: #00e0ff;
   line-height: 1.7;
 }
 
+.link {
+  color: var(--main-link-color);
+  text-decoration: none;
+  font-weight: bold;
+  width: fit-content;
+  
+  &:hover {
+      color: var(--main-link-hover-color);
+      text-decoration: underline;
+  }
+}
+
 @media (max-width: 768px) {
   .title {
     font-size: 2.3em;
