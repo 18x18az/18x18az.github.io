@@ -29,7 +29,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build --repo https://x-access-token:${GH_TOKEN}@github.com/18x18az/18x18az.github.io.git"
   },
   "eslintConfig": {
     "extends": [
