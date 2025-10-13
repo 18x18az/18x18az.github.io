@@ -82,12 +82,16 @@ const VolunteerPage = () => {
               </div>
             </div>
             <div className={styles.eventLinks}>
-              <a className={styles.eventRobotEventLink} href={event.robotEventsLink} target="_blank" rel="noopener noreferrer">
-                Event Details
-              </a>
-              <a className={styles.eventVolunteerLink} href={event.volunteerLink || '#'} target="_blank" rel="noopener noreferrer" style={{ opacity: event.volunteerLink ? 1 : 0.5, pointerEvents: event.volunteerLink ? 'auto' : 'none' }}>
-                Sign up to Volunteer
-              </a>
+              {event.robotEventsLink && (
+                <a className={styles.eventRobotEventLink} href={event.robotEventsLink} target="_blank" rel="noopener noreferrer">
+                  Event Details
+                </a>
+              )}
+              {event.volunteerLink && (
+                <a className={styles.eventVolunteerLink} href={event.volunteerLink || '#'} target="_blank" rel="noopener noreferrer" style={{ opacity: event.volunteerLink ? 1 : 0.5, pointerEvents: event.volunteerLink ? 'auto' : 'none' }}>
+                  Sign up to Volunteer
+                </a>
+              )}
             </div>
           </div>
         ))}
